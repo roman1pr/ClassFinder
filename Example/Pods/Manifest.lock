@@ -1,0 +1,16 @@
+PODS:
+  - ClassFinder (0.1.0)
+
+DEPENDENCIES:
+  - ClassFinder (from `../`)
+
+EXTERNAL SOURCES:
+  ClassFinder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ClassFinder: 138f3b8904b59d105d021ca9d08501bb59ed9174
+
+PODFILE CHECKSUM: 8cbd2566135329df0f2a2ad0c29b024e1b0d3040
+
+COCOAPODS: 1.12.1

@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A1B5649C2A84F1C1001BFB5B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5649B2A84F1C1001BFB5B /* Example.swift */; };
 		DEFCB1C1E8727BAA1C5C5FDA /* Pods_ClassFinder_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD1DE07BE6DA1AEF42A8FA /* Pods_ClassFinder_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +62,14 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDD1DE07BE6DA1AEF42A8FA /* Pods_ClassFinder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassFinder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C259A5A4121113E51D0B5B57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A1B5649A2A84F1C0001BFB5B /* ClassFinder_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassFinder_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1B5649B2A84F1C1001BFB5B /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		C259A5A4121113E51D0B5B57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C86381D18B6D35A4B3849ECA /* Pods-ClassFinder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassFinder_Example.release.xcconfig"; path = "Target Support Files/Pods-ClassFinder_Example/Pods-ClassFinder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D9112968790C583B931E9470 /* Pods-ClassFinder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassFinder_Example.debug.xcconfig"; path = "Target Support Files/Pods-ClassFinder_Example/Pods-ClassFinder_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DCAF5492DAC93EBC9002AC97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DCAF5492DAC93EBC9002AC97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EF18BECB9A2784FE300670DD /* Pods-ClassFinder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassFinder_Tests.release.xcconfig"; path = "Target Support Files/Pods-ClassFinder_Tests/Pods-ClassFinder_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F9AA931E82317DE2819A3BD6 /* ClassFinder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ClassFinder.podspec; path = ../ClassFinder.podspec; sourceTree = "<group>"; };
+		F9AA931E82317DE2819A3BD6 /* ClassFinder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ClassFinder.podspec; path = ../ClassFinder.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +106,6 @@
 				229B5932FB64CDF0D3580571 /* Pods-ClassFinder_Tests.debug.xcconfig */,
 				EF18BECB9A2784FE300670DD /* Pods-ClassFinder_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				A1B5649B2A84F1C1001BFB5B /* Example.swift */,
+				A1B5649A2A84F1C0001BFB5B /* ClassFinder_Example-Bridging-Header.h */,
 			);
 			name = "Example for ClassFinder";
 			path = ClassFinder;
@@ -248,6 +252,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = roman1pr;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1430;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B5649C2A84F1C1001BFB5B /* Example.swift in Sources */,
 				6003F59E195388D20070C39A /* REBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* REBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -494,12 +503,15 @@
 			baseConfigurationReference = D9112968790C583B931E9470 /* Pods-ClassFinder_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassFinder/ClassFinder-Prefix.pch";
 				INFOPLIST_FILE = "ClassFinder/ClassFinder-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassFinder/ClassFinder_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +522,14 @@
 			baseConfigurationReference = C86381D18B6D35A4B3849ECA /* Pods-ClassFinder_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassFinder/ClassFinder-Prefix.pch";
 				INFOPLIST_FILE = "ClassFinder/ClassFinder-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassFinder/ClassFinder_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -525,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 229B5932FB64CDF0D3580571 /* Pods-ClassFinder_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -550,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF18BECB9A2784FE300670DD /* Pods-ClassFinder_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

@@ -1,0 +1,6 @@
+framework module ClassFinder {
+  umbrella header "ClassFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
